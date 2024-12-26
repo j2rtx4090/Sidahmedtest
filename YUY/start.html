@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="start.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>موقع الوصفات</title>
+</head>
+<body>
+    <!-- رأس الصفحة -->
+    <header>
+        <div class="logo">
+            <h1>موقع الوصفات</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#recipes">الوصفات</a></li>
+                <li><a href="#about">عن الموقع</a></li>
+                <li><a href="#contact">اتصل بنا</a></li>
+            </ul>
+            <button class="menu-btn" onclick="toggleMenu()">☰</button> <!-- زر لفتح القائمة الجانبية -->
+        </nav>
+    </header>
+
+    <!-- القائمة الجانبية -->
+    <div class="sidebar" id="sidebar">
+        <h3>أصناف الطعام</h3>
+        <ul>
+            <li><a href="#">المقبلات</a></li>
+            <li><a href="#">الأطباق الرئيسية</a></li>
+            <li><a href="#">الحلويات</a></li>
+            <li><a href="#">المشروبات</a></li>
+            <li><a href="#">سلطات</a></li>
+        </ul>
+    </div>
+
+    <!-- باقي المحتوى الصفحة -->
+    <!-- القسم الرئيسي -->
+    <section id="home">
+        <div class="hero">
+            <h2>اكتشف أروع الوصفات مع موقعنا!</h2>
+            <p>ابحث عن الوصفات المثالية لجميع الوجبات والمناسبات.</p>
+            <a href="#recipes" class="btn">ابدأ الآن</a>
+        </div>
+    </section>
+
+    <!-- قسم الوصفات -->
+    <section id="recipes">
+        <h2>أحدث الوصفات</h2>
+        <div class="recipe-cards">
+            <!-- وصفة 1 -->
+            <div class="recipe-card">
+                <img src="img/RU333770-e018fc9e23124ec994cd036cc1fd2016.jpg" alt="وصفة 1">
+                <h3>وصفة الحساء السهل</h3>
+                <p>وصفة لذيذة وسهلة لتحضير الحساء في دقائق.</p>
+                <a href="#" class="btn">عرض الوصفة</a>
+            </div>
+
+            <!-- وصفة 2 -->
+            <div class="recipe-card">
+                <img src="img/الصورة-الرئيسية-لوصفةطريقة-عمل-كيكة-الشوكولاته-الهشة.webp" alt="وصفة 2">
+                <h3>كيك الشوكولاتة</h3>
+                <p>تعلم كيفية صنع كيكة الشوكولاتة المثالية في المنزل.</p>
+                <a href="#" class="btn">عرض الوصفة</a>
+            </div>
+
+            <!-- وصفة 3 -->
+            <div class="recipe-card">
+                <img src="recipe3.jpg" alt="وصفة 3">
+                <h3>سلطة الفواكه الطازجة</h3>
+                <p>سلطة لذيذة وصحية لتحضيرها في أي وقت.</p>
+                <a href="#" class="btn">عرض الوصفة</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم عن الموقع -->
+    <section id="about">
+        <h2>عن موقع الوصفات</h2>
+        <p>موقع الوصفات هو منصة تجمع أفضل الوصفات من جميع أنحاء العالم. نقدم لك وصفات متنوعة تناسب جميع الأذواق والمناسبات، بالإضافة إلى إمكانية مشاركة وصفاتك الخاصة.</p>
+    </section>
+
+    <!-- قسم الاتصال -->
+    <section id="contact">
+        <h2>اتصل بنا</h2>
+        <p>إذا كانت لديك أي استفسارات، لا تتردد في التواصل معنا.</p>
+        <form action="#" method="post">
+            <label for="name">الاسم</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">البريد الإلكتروني</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">رسالتك</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit" class="btn">إرسال</button>
+        </form>
+    </section>
+
+    <!-- تذييل الصفحة -->
+    <footer>
+        <p>&copy; 2024 موقع الوصفات. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script src="start.js"></script> <!-- ربط ملف الجافا سكربت -->
+</body>
+</html>

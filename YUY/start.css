@@ -1,0 +1,199 @@
+/* الأساسيات */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    direction: rtl; /* تأكيد النص من اليمين لليسار */
+    background-color: #f9f9f9; /* خلفية فاتحة */
+    color: #333; /* لون النص الأساسي */
+}
+
+/* رأس الصفحة */
+header {
+    background-color: #FF6F00; /* لون برتقالي دافئ */
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 24px;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: inline-block;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.menu-btn {
+    display: block; /* عرض الزر */
+    background-color: #FF6F00;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: 20px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.sidebar {
+    width: 0;
+    background-color: #FFEB3B;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow-y: auto;
+    text-align: right;
+    transition: width 0.3s ease;
+    z-index: 999;
+}
+
+.sidebar h3 {
+    font-size: 24px;
+    color: #FF6F00;
+    margin-bottom: 20px;
+}
+/* القائمة الجانبية */
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    background-color: #F1F8E9;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color: #FF6F00;
+    color: white;
+}
+
+/* قسم البطل */
+.hero {
+    background-color: #FFB74D; /* لون برتقالي فاتح */
+    color: #333;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    background-color: #388E3C; /* أخضر دافئ */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.hero .btn:hover {
+    background-color: #2C6B2F;
+}
+
+/* قسم الوصفات */
+#recipes {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#recipes h2 {
+    font-size: 32px;
+    color: #388E3C; /* الأخضر للدلالة على الصحة والطعام الطازج */
+    margin-bottom: 40px;
+}
+
+.recipe-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.recipe-card {
+    background-color: white;
+    padding: 20px;
+    width: 30%;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.recipe-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.recipe-card h3 {
+    color: #FF6F00;
+    margin-bottom: 10px;
+}
+
+.recipe-card p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.recipe-card .btn {
+    background-color: #388E3C;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.recipe-card .btn:hover {
+    background-color: #2C6B2F;
+}
+
+/* تذييل الصفحة */
+footer {
+    background-color: #FF6F00;
+    color: white;
+    text-align: center;
+}
